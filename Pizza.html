@@ -2,9 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Fredyy FazBear's Pizza</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div class="container">
+    <div class="content">
+        <h1>Freddy Fazbear's Pizza</h1>
+        <form>
+            <fieldset>
+                <legend>Customer:</legend></legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
 
+<div classw="row">
+    <fieldset>
+        <legend>Flavor:</legend></legend>
+        <div>
+            <input type="radio" id="classic" name="classic">
+            <label for="classic">Classic Pepperoni</label>
+        </div>
+        <div>
+            <input type="radio" id="cheese" name="cheese">
+            <label for="cheese">Cheese</label>
+        </div>
+        <div>
+            <input type="radio" id="meat" name="meat">
+            <label for="meat">Meat Lovers</label>
+        </div>
+    </fieldset>
+</div>
+
+<div>
+    <fieldset>
+        <legend>Size:</legend></legend>
+        <div>
+            <input type="radio" id="small" name="size">
+            <label for="small">Small</label>
+        </div>
+        <div>
+            <input type="radio" id="medium" name="size">
+            <label for="medium">Medium</label>
+        </div>
+        <div>
+            <input type="radio" id="large" name="size">
+            <label for="large">Large</label>
+        </div>
+    </fieldset>
+</div>
+
+<div>
+    <fieldset>
+        <legend>Topping:</legend></legend>
+        <div>
+            <input type="checkbox" id="peporoni" name="peporoni">
+            <label for="peporoni">Pepperoni</label>
+        </div>
+        <div>
+            <input type="checkbox" id="extra" name="extra">
+            <label for="extra">Extra Cheese</label>
+        </div>
+        <div>
+            <input type="checkbox" id="pineapple" name="pineapple">
+            <label for="pineapple">Pineapple</label>
+        </div>
+    </fieldset>
+</div>
+
+<div>
+    <fieldset>
+        <legend>Here or to go?:</legend></legend>
+        <label for="container">Please Choose One</label>
+        <select name="container" id="container">
+            <option value="here">Here</option>
+            <option value="go">To go</option>
+        </select>
+    </fieldset>
+</div>
+<fieldset>
+    <legend>Special:</legend></legend>
+    <div>
+        <label for="SpecialRequests">Special Requests:</label>
+        <textarea id="SpecialRequests" name="SpecialRequests" row="4" cols="10" placeholder="Allergic to peanut, substitution, etc."></textarea>
+    </div>
+</fieldset>
+
+<fieldset>
+    <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+    <button type="submit">Submit Order</button>
+</fieldset>
 </body>
 </html>
